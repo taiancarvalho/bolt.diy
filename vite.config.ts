@@ -94,6 +94,11 @@ export default defineConfig((config) => {
     build: {
       target: 'esnext',
     },
+    server: {
+      allowedHosts: [
+        'bolt-boltdiy.38fxyo.easypanel.host'
+      ]
+    },
     plugins: [
       nodePolyfills({
         include: ['buffer', 'process', 'util', 'stream'],
